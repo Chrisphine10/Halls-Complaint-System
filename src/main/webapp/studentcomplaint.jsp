@@ -7,11 +7,13 @@
 <title>Complaints</title>
 </head>
 <body>
-	<form>
+	<h2>Submit Complaint</h2>
+	<form action = "/complaintview.jsp" method ="get">
 	<label>Title</label>
-	<input type="text">
+	<input type="text"></br>
 	<label>Body</label>
-	<input type="text">
+	<input type="text"></br>
+	<input type ="submit">
 </form>
 </body>
 </html>
