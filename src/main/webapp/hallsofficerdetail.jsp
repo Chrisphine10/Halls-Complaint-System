@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Details</title>
+<title>Home</title>
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
@@ -13,9 +13,10 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/studentcomplaint.jsp">Complaint</a>
-				<a class="navbar-brand" href="/studenthistory.jsp">History</a>
-				<a id = "active" class="navbar-brand" href="/studentdetail.jsp">Details</a>
+				<a class="navbar-brand" href="/hallsofficerhome.jsp">Complaint List</a>
+				<a class="navbar-brand" href="/hallsofficerpending.jsp">Pending</a>
+				<a class="navbar-brand" href="/hallsofficercomplete.jsp">Complete</a>
+				<a id = "active" class="navbar-brand" href="/hallsofficerdetail.jsp">Details</a>
 				<a class="navbar-brand" href="/userguide.jsp">Help</a>
 				<a class="navbar-brand" href="/contactus.jsp">Contact Us</a></div >
 				<!-- Collect the nav links, forms, and other content for toggling -->

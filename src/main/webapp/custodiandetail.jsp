@@ -13,11 +13,12 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/studentcomplaint.jsp">Complaint</a>
-				<a class="navbar-brand" href="/studenthistory.jsp">History</a>
-				<a id = "active" class="navbar-brand" href="/studentdetail.jsp">Details</a>
+				<a class="navbar-brand" href="/custodianhome.jsp">Complaint List</a>
+				<a class="navbar-brand" href="/custodianpending.jsp">Pending</a>
+				<a class="navbar-brand" href="/custodiancomplete.jsp">Complete</a>
+				<a class="navbar-brand" href="/custodiandetail.jsp">Details</a>
 				<a class="navbar-brand" href="/userguide.jsp">Help</a>
-				<a class="navbar-brand" href="/contactus.jsp">Contact Us</a></div >
+				<a id = "active" class="navbar-brand" href="/contactus.jsp">Contact Us</a></div >
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">

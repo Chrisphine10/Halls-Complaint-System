@@ -4,20 +4,19 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Details</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<title>Contact Us</title>
+	<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/studentcomplaint.jsp">Complaint</a>
-				<a class="navbar-brand" href="/studenthistory.jsp">History</a>
-				<a id = "active" class="navbar-brand" href="/studentdetail.jsp">Details</a>
 				<a class="navbar-brand" href="/userguide.jsp">Help</a>
-				<a class="navbar-brand" href="/contactus.jsp">Contact Us</a></div >
+				<a id = "active" class="navbar-brand" href="/contactus.jsp">Contact Us</a>
+				<a class="navbar-brand" href="#">Back</a>
+				</div >
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">

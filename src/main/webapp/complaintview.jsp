@@ -13,7 +13,11 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Complaint</a> </div >
+				<a class="navbar-brand" href="/studentcomplaint.jsp">Complaint</a>
+				<a class="navbar-brand" href="/studenthistory.jsp">History</a>
+				<a id = "active" class="navbar-brand" href="/studentdetail.jsp">Details</a>
+				<a class="navbar-brand" href="/userguide.jsp">Help</a>
+				<a class="navbar-brand" href="/contactus.jsp">Contact Us</a></div >
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">
@@ -29,10 +33,9 @@
 					</ul>
 					</div >
 					<!-- /.navbar-collapse -->
-					
 					</div >
 					<!-- /.container-fluid -->
 	</nav>
-	
+	<h1>heeeey</h1>
 </body>
 </html>
