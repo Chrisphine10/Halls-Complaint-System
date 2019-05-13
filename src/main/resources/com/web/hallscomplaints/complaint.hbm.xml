@@ -5,13 +5,14 @@
 "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-mapping>
-	<class name = "com.web.hallscomplaint.Complaint" table = "complaints">
+	<class name = "com.web.hallscomplaints.Complaint" table = "complaints">
 	
 	<id name = "reg_no" column = "reg_no">
-	<generator class = "assigned"></generator>
+	<generator class = "native"></generator>
 	</id>
 	
-	<property name = "title"></property>
+	<property name = "title" ></property>
 	<property name = "complaint_report"></property>
+	<property name = "date_of_report"></property>
 	</class>
 </hibernate-mapping>

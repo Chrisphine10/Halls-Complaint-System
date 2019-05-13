@@ -16,7 +16,7 @@
 				<a class="navbar-brand" href="/adminhome.jsp">Home</a>
 				<a class="navbar-brand" href="/user_registration.jsp">Register User</a>
 				<a class="navbar-brand" href="/userdelete.jsp">Delete User</a>
-				<a class="navbar-brand" href="/userlist.jsp">User List</a>
+				<a class="navbar-brand" href="/userslist.jsp">User List</a>
 				<a class="navbar-brand" href="/adminsearch.jsp">Search</a>
 				<a class="navbar-brand" href="/userguide.jsp">Help</a>
 				<a class="navbar-brand" href="/contactus.jsp">Contact Us</a></div >
