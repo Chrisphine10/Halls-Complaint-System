@@ -1,37 +1,39 @@
 package com.web.hallscomplaints;
 
-import java.sql.Date;
-
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
-@Table(name = "complaints")
-public class Complaint {
+public class Complaint{
 	
 	private String title;
 	private String complaint_report;
-	private String reg_no;
+	private int reg_no;
 	private String hostelHall;
 	private String hostelBlock;
-	private Date date_of_report;
-
-	public Complaint(String title, String complaint_report, String reg_no, String hostelHall, String hostelBlock,
-			Date date_of_report) {
+	
+    public Complaint() {
+		
+	}
+	public Complaint(String title, String complaint_report, int reg_no, String hostelHall, String hostelBlock) 
+	{
 		super();
 		this.title = title;
 		this.complaint_report = complaint_report;
 		this.reg_no = reg_no;
 		this.hostelHall = hostelHall;
 		this.hostelBlock = hostelBlock;
-		this.date_of_report = date_of_report;
 	}
 	 @Id
-	 @GeneratedValue
-	 @Column(name = "reg_no")
+	 @GeneratedValue 
+	 public int getReg_no() {
+			return reg_no;
+	}
+
+		public void setReg_no(int reg_no) {
+			this.reg_no = reg_no;
+	}
 	public String getTitle() {
 		return title;
 	}
@@ -46,14 +48,6 @@ public class Complaint {
 
 	public void setComplaint_report(String complaint_report) {
 		this.complaint_report = complaint_report;
-	}
-
-	public String getReg_no() {
-		return reg_no;
-	}
-
-	public void setReg_no(String reg_no) {
-		this.reg_no = reg_no;
 	}
 
 	public String getHostelHall() {
@@ -72,16 +66,4 @@ public class Complaint {
 		this.hostelBlock = hostelBlock;
 	}
 	
-	public Date getDate() {
-		return date_of_report;
-	}
-	
-	public void setDate(String string) {
-		this.date_of_report = date_of_report;
-	}
-
-	public Complaint() {
-		
-	}
-
 }
