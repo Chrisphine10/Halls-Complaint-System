@@ -1,13 +1,10 @@
 package com.web.hallscomplaints;
 
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import com.web.hallscomplaints.HibernateUtil;
 @SpringBootApplication
 public class HallscomplaintsystemApplication {
 
@@ -21,20 +18,15 @@ public class HallscomplaintsystemApplication {
 	    com.setReg_no(53363);
 	    com.setHostelBlock("sfgs");
 	    com.setHostelHall("shsjk");
-	        
-		Configuration con = new Configuration().configure().addAnnotatedClass(Complaint.class);
-		
-		ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
-		
-		SessionFactory sf = con.buildSessionFactory();
-		Session session = sf.openSession();
+
+	    Session session = HibernateUtil.getSessionFactory().openSession();
 		
         Transaction tx = session.beginTransaction();
-        
-        session.save(com);
-        
-        System.out.println("Maven + Hibernate + MySQL");
         tx.commit();
+       
+        session.save(com);
+        session.close();
+        System.out.println("Maven + Hibernate + MySQL");
 		System.out.println("heeey");
 	}
 }
