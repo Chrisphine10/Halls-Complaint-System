@@ -6,10 +6,21 @@
 <meta charset="ISO-8859-1">
 <title>Student Home</title>
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="../style.css" type="text/css" rel="stylesheet">
 <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+    alert("Complaint Submitted");
+  });
+});
+</script>
+
 </head>
 <body>
+ <div class="view" style="background-image: url('../images/eu.png'); background-repeat: repeat; background-size: cover; background-position: center center;">
 		<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -28,7 +39,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="#">Action</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#">Log Out</a></li>
+								<li><a href="logout">Log Out</a></li>
 							</ul></li>
 					</ul>
 					</div >
@@ -36,14 +47,20 @@
 					</div >
 					<!-- /.container-fluid -->
 	</nav>
-<div class = "container">
+		    <div class = "container">
 			<form action = "complaintview" method ="get">
-			<label>Title</label>
-			<input type="text"></br>
-			<label>Body</label>
-			<input type="text"></br>
-			<button class="btn btn-success" type ="submit">Submit</button>
+			<div class="form-group">
+			  <label for="ttl">Title:</label>
+			  <input type="text" name ="title" data-length="20" class="form-control noresize" placeholder="Type in the title of your complaint." id="ttl">
+			</div>
+			<div class="form-group">
+			<label for="bod">Complaint Body:</label>
+			<textarea class="form-control" data-length="120" name = "body" rows="10" placeholder="Type in the complaint body" id="bod" style="resize: none;"></textarea>
+			</div>
+			<button class="btn btn-primary">
+			<span class="spinner-border spinner-border-sm"></span>Submit</button>
 			</form>
+		</div>	
 </div>
 </body>
 </html>

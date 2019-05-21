@@ -43,6 +43,12 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
 		<dependency>
 		  <groupId>org.apache.tomcat.embed</groupId>
@@ -146,6 +152,13 @@
 		    <groupId>dom4j</groupId>
 		    <artifactId>dom4j</artifactId>
 		    </dependency>
+		    <!-- https://mvnrepository.com/artifact/org.eclipse.jface/text -->
+		<dependency>
+		    <groupId>org.eclipse.jface</groupId>
+		    <artifactId>text</artifactId>
+		    <version>3.3.0-v20070606-0010</version>
+		</dependency>
+				    
 		<!-- https://mvnrepository.com/artifact/org.jboss.javaee/jboss-transaction-api -->
 		<dependency>
 		    <groupId>org.jboss.javaee</groupId>

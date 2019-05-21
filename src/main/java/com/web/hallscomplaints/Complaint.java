@@ -3,8 +3,10 @@ package com.web.hallscomplaints;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table
 public class Complaint{
 	
 	private String title;
@@ -12,11 +14,12 @@ public class Complaint{
 	private int reg_no;
 	private String hostelHall;
 	private String hostelBlock;
-	
+	private String CurrentDate;
+
     public Complaint() {
 		
 	}
-	public Complaint(String title, String complaint_report, int reg_no, String hostelHall, String hostelBlock) 
+	public Complaint(String title, String complaint_report, int reg_no, String hostelHall, String hostelBlock, String CurrentDate) 
 	{
 		super();
 		this.title = title;
@@ -24,8 +27,16 @@ public class Complaint{
 		this.reg_no = reg_no;
 		this.hostelHall = hostelHall;
 		this.hostelBlock = hostelBlock;
+		this.CurrentDate = CurrentDate; 
 	}
-	 @Id
+	
+	public String getCurrentDate() {
+		return CurrentDate;
+	}
+	public void setCurrentDate(String string) {
+		CurrentDate = string;
+	}
+	@Id
 	 @GeneratedValue 
 	 public int getReg_no() {
 			return reg_no;

@@ -35,7 +35,27 @@
 					<!-- /.navbar-collapse -->
 					</div >
 					<!-- /.container-fluid -->
-	</nav>
-	<h1>heeeey</h1>
+	</nav>		  
+      <div class="media">
+		    <div class="media-left">
+		      <img src="eu.png" class="media-object" style="width:60px">
+		    </div>
+		    <div class="media-body">
+		      <h4 class="media-heading">Complaint Submitted Successfully</h4><br><hr><br>
+		      <p>Thank you for submitting your complaint.</p>
+		      <p>We will respond as soon as possible. <strong>Goodbye</strong></p>
+		    </div>
+		  </div>
+		  <hr>
+      <div class="container-fluid">
+	      <ul>
+	         <li><p><b>Title:</b>
+	            <%= request.getParameter("title")%>
+	         </p></li>
+	         <li><p><b>Complaint Body:</b>
+	            <%= request.getParameter("body")%>
+	         </p></li>
+	      </ul>
+      </div>
 </body>
 </html>
