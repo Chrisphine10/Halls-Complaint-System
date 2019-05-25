@@ -14,7 +14,7 @@ public class ComplaintController {
 			System.out.println("Hey");
 			return "complaintview.jsp";
 		}
-	public static void dataInsert() {
+	public void dataInsert() {
 		
         Complaint com = new Complaint();
 	    

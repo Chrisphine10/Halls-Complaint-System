@@ -1,12 +1,5 @@
 package com.web.hallscomplaints;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table
 public class Complaint{
 	
 	private String title;
@@ -36,8 +29,6 @@ public class Complaint{
 	public void setCurrentDate(String string) {
 		CurrentDate = string;
 	}
-	@Id
-	 @GeneratedValue 
 	 public int getReg_no() {
 			return reg_no;
 	}

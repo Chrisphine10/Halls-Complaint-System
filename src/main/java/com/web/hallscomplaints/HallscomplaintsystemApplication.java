@@ -8,7 +8,6 @@ public class HallscomplaintsystemApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HallscomplaintsystemApplication.class, args);
-		
-
+		 
 	}
 }
