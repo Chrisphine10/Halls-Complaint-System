@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,10 +48,10 @@
       <div class="container-fluid">
 	      <ul>
 	         <li><p><b>Title:</b>
-	            <%= request.getParameter("title")%>
+	         <% request.getParameter("title"); %>
 	         </p></li>
 	         <li><p><b>Complaint Body:</b>
-	            <%= request.getParameter("body")%>
+	         <% request.getParameter("body"); %>
 	         </p></li>
 	      </ul>
       </div>

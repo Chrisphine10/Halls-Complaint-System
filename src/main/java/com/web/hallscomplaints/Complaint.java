@@ -1,34 +1,41 @@
 package com.web.hallscomplaints;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Complaint{
 	
+	@Id
+	private int reg_no;
 	private String title;
 	private String complaint_report;
-	private int reg_no;
-	private String hostelHall;
-	private String hostelBlock;
-	private String CurrentDate;
+	private String hostel_name;
+	private String date_of_report;
+	private String status;
+	private String custodian_report;
+	private String admin_report;
+	private String complaint_no;
+	
 
     public Complaint() {
 		
 	}
-	public Complaint(String title, String complaint_report, int reg_no, String hostelHall, String hostelBlock, String CurrentDate) 
+	public Complaint(String title, String admin_report, String complaint_no, String status, String custodian_report, String complaint_report, int reg_no, String hostel_name, String date_of_report) 
 	{
-		super();
+
 		this.title = title;
 		this.complaint_report = complaint_report;
 		this.reg_no = reg_no;
-		this.hostelHall = hostelHall;
-		this.hostelBlock = hostelBlock;
-		this.CurrentDate = CurrentDate; 
+		this.hostel_name = hostel_name;
+		this.date_of_report = date_of_report; 
+		this.admin_report = admin_report;
+		this.custodian_report = custodian_report;
+		this.status = status;
+		this.setComplaint_no(complaint_no);
+		
 	}
 	
-	public String getCurrentDate() {
-		return CurrentDate;
-	}
-	public void setCurrentDate(String string) {
-		CurrentDate = string;
-	}
 	 public int getReg_no() {
 			return reg_no;
 	}
@@ -52,20 +59,77 @@ public class Complaint{
 		this.complaint_report = complaint_report;
 	}
 
-	public String getHostelHall() {
-		return hostelHall;
+	/**
+	 * @return the date_of_report
+	 */
+	public String getDate_of_report() {
+		return date_of_report;
 	}
-
-	public void setHostelHall(String hostelHall) {
-		this.hostelHall = hostelHall;
+	/**
+	 * @param date_of_report the date_of_report to set
+	 */
+	public void setDate_of_report(String date_of_report) {
+		this.date_of_report = date_of_report;
 	}
-
-	public String getHostelBlock() {
-		return hostelBlock;
+	/**
+	 * @return the status
+	 */
+	public String getStatus() {
+		return status;
 	}
-
-	public void setHostelBlock(String hostelBlock) {
-		this.hostelBlock = hostelBlock;
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	/**
+	 * @return the hostelName
+	 */
+	public String getHostel_name() {
+		return hostel_name;
+	}
+	/**
+	 * @param hostelName the hostelName to set
+	 */
+	public void setHostel_name(String hostel_name) {
+		this.hostel_name = hostel_name;
+	}
+	/**
+	 * @return the custodian_report
+	 */
+	public String getCustodian_report() {
+		return custodian_report;
+	}
+	/**
+	 * @param custodian_report the custodian_report to set
+	 */
+	public void setCustodian_report(String custodian_report) {
+		this.custodian_report = custodian_report;
+	}
+	/**
+	 * @return the admin_report
+	 */
+	public String getAdmin_report() {
+		return admin_report;
+	}
+	/**
+	 * @param admin_report the admin_report to set
+	 */
+	public void setAdmin_report(String admin_report) {
+		this.admin_report = admin_report;
+	}
+	/**
+	 * @return the complaint_no
+	 */
+	public String getComplaint_no() {
+		return complaint_no;
+	}
+	/**
+	 * @param complaint_no the complaint_no to set
+	 */
+	public void setComplaint_no(String complaint_no) {
+		this.complaint_no = complaint_no;
 	}
 	
 }

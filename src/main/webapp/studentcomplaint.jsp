@@ -48,7 +48,7 @@ $(document).ready(function(){
 					<!-- /.container-fluid -->
 	</nav>
 		    <div class = "container">
-			<form action = "complaintview" method ="get">
+			<form action = "complaintview" method ="post">
 			<div class="form-group">
 			  <label for="ttl">Title:</label>
 			  <input type="text" name ="title" data-length="20" class="form-control noresize" placeholder="Type in the title of your complaint." id="ttl">
