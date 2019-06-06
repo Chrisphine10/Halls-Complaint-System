@@ -8,12 +8,14 @@
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
+	<%@page import="java.sql.*,java.util.*"%>
+
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/studentcomplaint.jsp">Complaint</a>
-				<a class="navbar-brand" href="/studenthistory.jsp">History</a>
-				<a id = "active" class="navbar-brand" href="/studentdetail.jsp">Details</a>
+				<a class="navbar-brand" href="/complaint">Complaint</a>
+				<a class="navbar-brand" href="/studenthistory">History</a>
+				<a id = "active" class="navbar-brand" href="/studentdetail">Details</a>
 				<a class="navbar-brand" href="/userguide.jsp">Help</a>
 				<a class="navbar-brand" href="/contactus.jsp">Contact Us</a></div >
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,7 +38,7 @@
 	</nav>		  
       <div class="media">
 		    <div class="media-left">
-		      <img src="eu.png" class="media-object" style="width:60px">
+		      <img src="../images/eu.png" class="media-object" style="width:60px">
 		    </div>
 		    <div class="media-body">
 		      <h4 class="media-heading">Complaint Submitted Successfully</h4><br><hr><br>
@@ -48,11 +50,12 @@
       <div class="container-fluid">
 	      <ul>
 	         <li><p><b>Title:</b>
-	         <% request.getParameter("title"); %>
+	         <%= request.getParameter("title") %>
 	         </p></li>
 	         <li><p><b>Complaint Body:</b>
-	         <% request.getParameter("body"); %>
+	         <%= request.getParameter("body") %>
 	         </p></li>
+	         
 	      </ul>
       </div>
 </body>

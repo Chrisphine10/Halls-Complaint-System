@@ -8,7 +8,7 @@ public class StudentcomplaintController {
 	@RequestMapping("complaint")
 	
 	public String complaint() {
-		System.out.println("HIIII");
+		System.out.println("complaint page");
 		return "studentcomplaint.jsp";
 	}
 

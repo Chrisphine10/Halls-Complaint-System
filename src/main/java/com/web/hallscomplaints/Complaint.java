@@ -10,38 +10,50 @@ public class Complaint{
 	private int reg_no;
 	private String title;
 	private String complaint_report;
-	private String hostel_name;
+	private String hostel_hall;
+	private String hostel_block;
 	private String date_of_report;
 	private String status;
 	private String custodian_report;
 	private String admin_report;
-	private String complaint_no;
-	
+	private int complaint_no;
 
     public Complaint() {
 		
 	}
-	public Complaint(String title, String admin_report, String complaint_no, String status, String custodian_report, String complaint_report, int reg_no, String hostel_name, String date_of_report) 
+	public Complaint(String title, String admin_report, int complaint_no, String status, String custodian_report, String complaint_report, int reg_no, String hostel_hall, String hostel_block, String date_of_report) 
 	{
 
 		this.title = title;
 		this.complaint_report = complaint_report;
 		this.reg_no = reg_no;
-		this.hostel_name = hostel_name;
+		this.hostel_hall = hostel_hall;
+		this.hostel_block = hostel_block;
 		this.date_of_report = date_of_report; 
 		this.admin_report = admin_report;
 		this.custodian_report = custodian_report;
 		this.status = status;
-		this.setComplaint_no(complaint_no);
+		this.complaint_no = complaint_no;
 		
 	}
-	
+	public String getHostel_hall() {
+		return hostel_hall;
+	}
+	public void setHostel_hall(String hostel_hall) {
+		this.hostel_hall = hostel_hall;
+	}
+	public String getHostel_block() {
+		return hostel_block;
+	}
+	public void setHostel_block(String hostel_block) {
+		this.hostel_block = hostel_block;
+	}
 	 public int getReg_no() {
 			return reg_no;
 	}
 
-		public void setReg_no(int reg_no) {
-			this.reg_no = reg_no;
+		public void setReg_no(int reg) {
+			this.reg_no = reg;
 	}
 	public String getTitle() {
 		return title;
@@ -84,18 +96,6 @@ public class Complaint{
 		this.status = status;
 	}
 	/**
-	 * @return the hostelName
-	 */
-	public String getHostel_name() {
-		return hostel_name;
-	}
-	/**
-	 * @param hostelName the hostelName to set
-	 */
-	public void setHostel_name(String hostel_name) {
-		this.hostel_name = hostel_name;
-	}
-	/**
 	 * @return the custodian_report
 	 */
 	public String getCustodian_report() {
@@ -122,14 +122,22 @@ public class Complaint{
 	/**
 	 * @return the complaint_no
 	 */
-	public String getComplaint_no() {
+	public int getComplaint_no() {
 		return complaint_no;
 	}
 	/**
 	 * @param complaint_no the complaint_no to set
 	 */
-	public void setComplaint_no(String complaint_no) {
+	public void setComplaint_no(int complaint_no) {
 		this.complaint_no = complaint_no;
+	}
+	
+	@Override
+	public String toString() {
+		return "Complaint [reg_no=" + reg_no + ", title=" + title + ", complaint_report=" + complaint_report
+				+ ", hostel_hall=" + hostel_hall + ", hostel_block=" + hostel_block + ", date_of_report="
+				+ date_of_report + ", status=" + status + ", custodian_report=" + custodian_report + ", admin_report="
+				+ admin_report + ", complaint_no=" + complaint_no + "]";
 	}
 	
 }

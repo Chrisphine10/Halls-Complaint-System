@@ -34,9 +34,7 @@
 							</ul></li>
 					</ul>
 					</div >
-					<!-- /.navbar-collapse -->
 					</div >
-					<!-- /.container-fluid -->
 	</nav>
 	<div  class="navbar navbar-default">
 		<div class="container-fluid">

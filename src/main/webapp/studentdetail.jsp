@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +14,9 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/studentcomplaint.jsp">Complaint</a>
-				<a class="navbar-brand" href="/studenthistory.jsp">History</a>
-				<a id = "active" class="navbar-brand" href="/studentdetail.jsp">Details</a>
+				<a class="navbar-brand" href="/complaint">Complaint</a>
+				<a class="navbar-brand" href="/studenthistory">History</a>
+				<a id = "active" class="navbar-brand" href="/studentdetail">Details</a>
 				<a class="navbar-brand" href="/userguide.jsp">Help</a>
 				<a class="navbar-brand" href="/contactus.jsp">Contact Us</a></div >
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,5 +37,16 @@
 					</div >
 					<!-- /.container-fluid -->
 	</nav>
+	<div>
+	<ul>
+	<li>Full Name</li>
+	<li>Registration Number</li>
+	<li>Gender</li>
+	<li>Date of Birth</li>
+	<li>Hostel Hall</li>
+	<li>Hostel Block</li>
+	</ul>
+	</div>
+	
 </body>
 </html>

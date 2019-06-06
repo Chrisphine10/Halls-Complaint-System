@@ -37,5 +37,15 @@
 					</div >
 					<!-- /.container-fluid -->
 	</nav>
+	<div>
+	<ul>
+	<li>Full Name</li>
+	<li>ID Number</li>
+	<li>Gender</li>
+	<li>Date of Birth</li>
+	<li>Hostel Hall</li>
+	<li>Phone Number</li>
+	</ul>
+	</div>
 </body>
 </html>

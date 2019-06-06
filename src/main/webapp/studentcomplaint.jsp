@@ -24,9 +24,9 @@ $(document).ready(function(){
 		<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a id = "active" class="navbar-brand" href="/studentcomplaint.jsp">Complaint</a>
-				<a class="navbar-brand" href="/studenthistory.jsp">History</a>
-				<a class="navbar-brand" href="/studentdetail.jsp">Details</a>
+				<a id = "active" class="navbar-brand" href="/complaint">Complaint</a>
+				<a class="navbar-brand" href="/studenthistory">History</a>
+				<a class="navbar-brand" href="/studentdetail">Details</a>
 				<a class="navbar-brand" href="/userguide.jsp">Help</a>
 				<a class="navbar-brand" href="/contactus.jsp">Contact Us</a></div >
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,12 +43,12 @@ $(document).ready(function(){
 							</ul></li>
 					</ul>
 					</div >
-					<!-- /.navbar-collapse -->
+					<!-- /.navbar-collapse  -->
 					</div >
 					<!-- /.container-fluid -->
 	</nav>
 		    <div class = "container">
-			<form action = "complaintview" method ="post">
+			<form action = "complaintview" method = "get">
 			<div class="form-group">
 			  <label for="ttl">Title:</label>
 			  <input type="text" name ="title" data-length="20" class="form-control noresize" placeholder="Type in the title of your complaint." id="ttl">
@@ -57,8 +57,8 @@ $(document).ready(function(){
 			<label for="bod">Complaint Body:</label>
 			<textarea class="form-control" data-length="120" name = "body" rows="10" placeholder="Type in the complaint body" id="bod" style="resize: none;"></textarea>
 			</div>
-			<button class="btn btn-primary">
-			<span class="spinner-border spinner-border-sm"></span>Submit</button>
+			<button class="btn btn-primary" type = "submit">
+			<span class="spinner-border spinner-border-sm" ></span>Submit</button>
 			</form>
 		</div>	
 </div>
